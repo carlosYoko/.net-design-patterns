@@ -2,12 +2,14 @@ namespace MediatorPattern;
 
 public class User : Colleague
 {
-    public User(IMediator mediator) : base(mediator)
+    public string? UserName { get; set; }
+    public User(IMediator mediator, string userName) : base(mediator)
     {
+        UserName = userName;
     }
 
     public override void Receive(string message)
     {
-        Console.WriteLine("Un usuario recibe el mensaje: " + message);
+        Console.WriteLine($"El usuario {UserName} recibe el mensaje: " + message);
     }
 }

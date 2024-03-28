@@ -6,16 +6,16 @@ class Program
     {
         Mediator mediator = new Mediator();
 
-        Colleague userCarlos = new User(mediator);
-        Colleague userAdmin = new UserAdmin(mediator);
-        Colleague userAdmin2 = new UserAdmin(mediator);
+        Colleague user1 = new User(mediator, "Carlos");
+        Colleague userAdmin1 = new UserAdmin(mediator, "Pajaro Loco");
+        Colleague userAdmin2 = new UserAdmin(mediator, "Robert C");
 
-        mediator.Add(userCarlos);
-        mediator.Add(userAdmin);
+        mediator.Add(user1);
+        mediator.Add(userAdmin1);
         mediator.Add(userAdmin2);
 
-        userCarlos.Communicate("Algun admin en la sala?");
-        userAdmin.Communicate("Si, yo!");
+        user1.Communicate("Algun admin en la sala?");
+        userAdmin1.Communicate("Si, yo! Soy Pajaro Loco!");
         
     }
 }
