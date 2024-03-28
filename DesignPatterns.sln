@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS", "CQRS\CQRS.csproj", "{B2EB82FA-1169-4009-8434-A3B4CEEC0030}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPattern", "MediatorPattern\MediatorPattern.csproj", "{11FBCEAE-AC97-48C6-A003-083CF9564959}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B2EB82FA-1169-4009-8434-A3B4CEEC0030}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2EB82FA-1169-4009-8434-A3B4CEEC0030}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2EB82FA-1169-4009-8434-A3B4CEEC0030}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FBCEAE-AC97-48C6-A003-083CF9564959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FBCEAE-AC97-48C6-A003-083CF9564959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FBCEAE-AC97-48C6-A003-083CF9564959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FBCEAE-AC97-48C6-A003-083CF9564959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
