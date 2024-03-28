@@ -3,4 +3,4 @@
 Basic examples of design patterns for .NET Core
 
 - Mediator
-- [CQRS]("/CQRS")
+- [CQRS](/CQRS)
