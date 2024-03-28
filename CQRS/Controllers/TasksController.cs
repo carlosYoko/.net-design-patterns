@@ -4,7 +4,7 @@ using CQRSSimple.Infrastructure.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CQRSSimple.Controllers
+namespace CQRS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
