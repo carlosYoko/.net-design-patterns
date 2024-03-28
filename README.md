@@ -2,5 +2,5 @@
 
 Basic examples of design patterns for .NET Core
 
-- [Mediator](/Mediator)
+- [Mediator](/MediatorPattern)
 - [CQRS](/CQRS)
