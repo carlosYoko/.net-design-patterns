@@ -1,18 +1,11 @@
-namespace MediatorPattern;
+namespace MediatorBasic;
 
 public abstract class Colleague
 {
-    private IMediator _mediator;
+    protected Mediator mediator;
 
-    public Colleague(IMediator mediator)
+    public Colleague(Mediator mediator)
     {
-        _mediator = mediator;
+        this.mediator = mediator;
     }
-
-    public void Communicate(string message)
-    {
-        this._mediator.Send(message, this);
-    }
-
-    public abstract void Receive(string message);
 }

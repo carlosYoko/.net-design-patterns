@@ -1,21 +1,21 @@
-﻿using MediatorPattern;
+﻿using MediatorBasic;
 
 class Program
 {
     static void Main()
     {
-        Mediator mediator = new Mediator();
+        ConcreteMediator m = new ConcreteMediator();
 
-        Colleague user1 = new User(mediator, "Carlos");
-        Colleague userAdmin1 = new UserAdmin(mediator, "Pajaro Loco");
-        Colleague userAdmin2 = new UserAdmin(mediator, "Robert C");
+        ConcreteColleague1 c1 = new ConcreteColleague1(m);
+        ConcreteColleague2 c2 = new ConcreteColleague2(m);
 
-        mediator.Add(user1);
-        mediator.Add(userAdmin1);
-        mediator.Add(userAdmin2);
+        m.Colleague1 = c1;
+        m.Colleague2 = c2;
 
-        user1.Communicate("Algun admin en la sala?");
-        userAdmin1.Communicate("Si, yo! Soy Pajaro Loco!");
-        
+        c1.Send("How are you?");
+        c2.Send("Fine, thanks");
+
+        Console.Write("Press any key to exit program...");
+        Console.ReadKey();
     }
 }

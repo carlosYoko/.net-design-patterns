@@ -1,27 +1,6 @@
-namespace MediatorPattern;
+namespace MediatorBasic;
 
-public class Mediator : IMediator
+public abstract class Mediator
 {
-    private List<Colleague> _colleagues;
-
-    public Mediator()
-    {
-        _colleagues = new List<Colleague>();
-    }
-
-    public void Add(Colleague colleague)
-    {
-        this._colleagues.Add(colleague);
-    }
-
-    public void Send(string message, Colleague colleague)
-    {
-        foreach (var c in this._colleagues)
-        {
-            if (colleague != c)
-            {
-                c.Receive(message);
-            }
-        }
-    }
+    public abstract void Send(string message, Colleague colleague);
 }
